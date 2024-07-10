@@ -1,0 +1,374 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 10vh;
+  margin: 0;
+
+}
+
+html {
+  height: 100%;
+
+}
+
+nav {
+  padding: 0;
+}
+
+nav ul {
+  width: 100%;
+  background-color: rgba(240, 240, 240, 0.8);
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Added to vertically center list items */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+nav ul:hover {
+  background-color: transparent; /* Lighter background on hover */
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding-left: 40px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  transition: color 0.3s; /* Add transition effect */
+}
+
+nav a:hover {
+  color: #fff; /* White text on hover */
+}
+.travel {
+  text-align: center;
+  margin-top: 16%;
+  margin-bottom: 15px;
+}
+
+.travel li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.travel a {
+  color: #555;
+  font-size: 60px; /* Adjusted font size */
+  text-decoration: none;
+  cursor: default;
+}
+
+.head p {
+  color: #555;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-weight: bold;
+}
+
+.head button {
+  background-color: transparent;
+  border: 2px solid #555;
+  color: #555;
+  text-align: center;
+  display: block;
+  margin: 30px auto; /* Adjusted margin */
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 18%;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add transition effect */
+}
+.head button:hover {
+  background-color: #333; /* Darker background on hover */
+  color: #fff; /* White text on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+.head button:focus {
+  color: #555;
+  border: 2px solid #555;
+}
+
+.about {
+  background: white;
+  width: 100%;
+  height: 0px;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.about p {
+  text-align: center;
+  font-size: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.first,
+.second {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.first {
+  float: left;
+  text-align: end;
+}
+
+.second {
+  float: left;
+  text-align: start;
+}
+
+.first p,
+.second p {
+  margin-bottom: 20px;
+}
+
+.first.travel-tips,
+.first.inspiration,
+.second.travel-tips,
+.second.inspiration {
+  margin-bottom: 20px;
+}
+
+.first i,
+.second i {
+  font-size: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #555;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-block; /* Added to ensure it's an inline-level block container */
+  text-align: center;
+  line-height: 1.2; /* Added for vertical centering of text inside the circle */
+}
+
+.first strong,
+.second strong {
+  font-weight: bold;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.content {
+  background-color: aquamarine;
+}
+
+.show {
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.show h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted to create responsive columns */
+  grid-gap: 50px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  max-width: 100%; /* Adjusted to make the image responsive */
+  height: auto; /* Adjusted to maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s; /* Add transition effect */
+}
+.grid-item img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.grid-item h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.grid-item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-image: url(image2.webp);
+  background-size: cover; /* Adjusted to cover the entire element */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  color: #CAE4DB ;  
+}
+.choice,.contact,.input {
+  background-color: rgba(202, 228, 219, 0.25); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Set width to 30% */
+  margin: 20px; /* Add margin between boxes */
+  text-align: center; /* Add this to center the button */
+}
+
+/* Choice Section */
+
+.choice h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 0;
+  color: #34C759; /* Bright lime-inspired green heading color */
+}
+
+.choice p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #64C384; /* Medium muted green text color */
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+
+.contact h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 0;
+  color: #34C759; /* Bright lime-inspired green heading color */
+}
+
+.contact h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #64C384;
+}
+
+/* Input Section */
+
+.input input[type="text"],.input input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #64C384;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s; /* Add transition effect */
+}
+
+.input input[type="text"]::placeholder,.input input[type="email"]::placeholder {
+  color: #64C384;
+}
+
+.input input[type="text"]:focus,.input input[type="email"]:focus {
+  outline: none;
+  border-color: #34C759; /* Change border color on focus */
+  box-shadow: 0 0 10px rgba(52, 199, 89, 0.5); /* Add box shadow on focus */
+  background-color: rgba(52, 199, 89, 0.1); /* Add subtle background color on focus */
+}
+
+.input textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #64C384;
+  border-radius: 5px;
+  resize: vertical;
+  background-color: transparent;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s; /* Add transition effect */
+}
+
+.input textarea::placeholder {
+  color: #64C384;
+}
+
+.input textarea:focus {
+  outline: none;
+  border-color: #34C759; /* Change border color on focus */
+  box-shadow: 0 0 10px rgba(52, 199, 89, 0.5); /* Add box shadow on focus */
+  background-color: rgba(52, 199, 89, 0.1); /* Add subtle background color on focus */
+}
+
+
+.input button[type="submit"] {
+  background-color: transparent; /* Green button */
+  color: #64C384;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block; /* Add this to make the button an inline-block element */
+  box-shadow: 0 0 10px rgba(34, 51, 44, 0.6);
+}
+.input button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+.contact p{
+  color: #64C384;
+}
+.contact i{
+  color: #64C384;
+  padding: 20px;
+  border: 1px solid #64C384 ;
+  border-radius: 50%;
+  font-size: 30px;
+  margin-left: 12px;
+  transition: color 0.3s; /* Add transition effect */
+  box-shadow: 0px 0px 10px rgba(100, 195, 132, 0.5); /* Add box shadow */
+  cursor: pointer;
+
+}
+
+.fa-facebook:hover {
+  color: #4267B2; /* Facebook blue */
+  border: 1px solid #4267B2;
+  box-shadow: 0px 0px 10px rgba(66, 103, 178, 0.5); /* Add box shadow on hover */
+}
+
+.fa-instagram:hover {
+  color: #E1306C; /* Instagram pink */
+  border: 1px solid #E1306C;
+  box-shadow: 0px 0px 10px rgba(225, 48, 108, 0.5); /* Add box shadow on hover */
+}
+
+.fa-snapchat:hover {
+  color: yellow; /* Snapchat yellow */
+  border: 1px solid yellow;
+  box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5); /* Add box shadow on hover */
+}
+
+.fa-x-twitter:hover {
+  color: black; /* Twitter blue */
+  border: 1px solid black ;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}
+

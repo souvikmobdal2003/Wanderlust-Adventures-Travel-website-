@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("image1.jpg");
@@ -6,6 +7,7 @@ body {
   background-position: center;
   height: 10vh;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 
 }
 
@@ -57,10 +59,12 @@ nav a:hover {
 }
 
 .travel a {
-  color: #555;
+  color: #555;;
   font-size: 60px; /* Adjusted font size */
   text-decoration: none;
   cursor: default;
+  font-weight: bold;
+
 }
 
 .head p {
@@ -319,7 +323,7 @@ nav a:hover {
 }
 
 
-.input button[type="submit"] {
+.input button[type="submit"]{
   background-color: transparent; /* Green button */
   color: #64C384;
   padding: 10px 20px;
@@ -349,26 +353,35 @@ nav a:hover {
 }
 
 .fa-facebook:hover {
-  color: #4267B2; /* Facebook blue */
+  color: #fff; /* Facebook blue */
   border: 1px solid #4267B2;
   box-shadow: 0px 0px 10px rgba(66, 103, 178, 0.5); /* Add box shadow on hover */
+  background-color:#4267B2;
 }
 
 .fa-instagram:hover {
-  color: #E1306C; /* Instagram pink */
+  color:#fff; /* Instagram pink */
   border: 1px solid #E1306C;
   box-shadow: 0px 0px 10px rgba(225, 48, 108, 0.5); /* Add box shadow on hover */
+  background-color:#E1306C;
+
 }
 
 .fa-snapchat:hover {
-  color: yellow; /* Snapchat yellow */
+  color: black; /* Snapchat yellow */
   border: 1px solid yellow;
   box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5); /* Add box shadow on hover */
+  background-color:yellow;
 }
 
 .fa-x-twitter:hover {
-  color: black; /* Twitter blue */
+  color: #fff; /* Twitter blue */
   border: 1px solid black ;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+  background-color:black;
 }
+.input p{
+  color: #64C384;
+  box-shadow: 0 0 10px rgba(34, 51, 44, 0.6);
 
+}
